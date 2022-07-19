@@ -1,27 +1,14 @@
 package com.example.herokuappapiandroid4.data.repositories
 
-import androidx.lifecycle.liveData
-import com.example.Either
 import com.example.herokuappapiandroid4.data.apiservices.PeopleApiServices
-import kotlinx.coroutines.Dispatchers
-import java.io.IOException
+import com.example.herokuappapiandroid4.data.repositories.base.BaseRepository
 import javax.inject.Inject
 
-class PeopleRepository @Inject constructor(private val apiServices: PeopleApiServices) {
+class PeopleRepository @Inject constructor(private val apiServices: PeopleApiServices) :
+    BaseRepository() {
 
-    fun fetchPeople() = liveData(Dispatchers.IO) {
-        try {
-            emit(Either.Right(apiServices.fetchPeople()))
-        } catch (ioException: IOException) {
-            emit(Either.Left(ioException.localizedMessage))
-        }
-    }
+    fun fetchPeople() = doRequest { apiServices.fetchPeople() }
 
-    fun fetchPeopleId(id: Int) = liveData(Dispatchers.IO) {
-        try {
-            emit(Either.Right(apiServices.fetchPeopleId(id = id)))
-        } catch (ioException: IOException) {
-            emit(Either.Left(ioException.localizedMessage))
-        }
-    }
+    fun fetchPeopleId(id: String) = doRequestId { apiServices.fetchPeopleId(id) }
 }
+

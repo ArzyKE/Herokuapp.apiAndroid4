@@ -9,7 +9,6 @@ import javax.inject.Inject
 
 class RetrofitClient @Inject constructor() {
 
-
     fun provideRetrofit(
         okHttpClient: OkHttpClient.Builder
     ) = Retrofit.Builder()

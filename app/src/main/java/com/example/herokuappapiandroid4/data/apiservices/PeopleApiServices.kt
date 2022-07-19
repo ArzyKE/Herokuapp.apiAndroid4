@@ -12,6 +12,6 @@ interface PeopleApiServices {
 
     @GET("people/{id}")
     suspend fun fetchPeopleId(
-        @Path("people_id") id: Int
-    ): List<PeopleDetailModel>
+        @Path("id") id: String
+    ): PeopleDetailModel
 }

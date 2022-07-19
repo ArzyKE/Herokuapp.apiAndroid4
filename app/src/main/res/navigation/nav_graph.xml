@@ -21,6 +21,6 @@
         tools:layout="@layout/fragment_detail_people" >
         <argument
             android:name="position"
-            app:argType="String" />
+            app:argType="string" />
     </fragment>
 </navigation>

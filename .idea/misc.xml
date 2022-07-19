@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/activity_main.xml" value="0.17037037037037037" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/fragment_detail_people.xml" value="0.1796875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/fragment_detail_people.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/fragment_people.xml" value="0.17037037037037037" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/item_people.xml" value="0.1796875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/item_detail.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/item_people.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/HerokuappapiAndroid4/app/src/main/res/layout/item_people_detail.xml" value="0.1796875" />
       </map>
     </option>

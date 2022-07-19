@@ -1,13 +1,13 @@
 package com.example.herokuappapiandroid4.ui.fragments.detail
 
-import androidx.lifecycle.ViewModel
+import com.example.herokuappapiandroid4.base.BaseViewModel
 import com.example.herokuappapiandroid4.data.repositories.PeopleRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
 class DetailPeopleViewModel @Inject constructor(private val repository: PeopleRepository) :
-    ViewModel() {
+    BaseViewModel() {
 
-    fun fetchPeopleId(position: Int) = repository.fetchPeopleId(position)
+    fun fetchPeopleId(id: String) = repository.fetchPeopleId(id)
 }

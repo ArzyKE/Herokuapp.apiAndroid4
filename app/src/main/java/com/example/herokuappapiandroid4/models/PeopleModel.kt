@@ -15,5 +15,4 @@ data class PeopleModel(
 
     @SerializedName("age")
     val age: String,
-
 )
