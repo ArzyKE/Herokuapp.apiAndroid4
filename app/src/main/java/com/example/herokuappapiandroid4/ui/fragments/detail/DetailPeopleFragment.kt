@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.Either
+import com.example.herokuappapiandroid4.utils.Either
 import com.example.herokuappapiandroid4.R
 import com.example.herokuappapiandroid4.base.BaseFragment
 import com.example.herokuappapiandroid4.databinding.FragmentDetailPeopleBinding
