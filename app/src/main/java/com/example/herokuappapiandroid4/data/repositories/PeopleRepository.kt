@@ -9,6 +9,6 @@ class PeopleRepository @Inject constructor(private val apiServices: PeopleApiSer
 
     fun fetchPeople() = doRequest { apiServices.fetchPeople() }
 
-    fun fetchPeopleId(id: String) = doRequestId { apiServices.fetchPeopleId(id) }
+    fun fetchPeopleId(id: String) = doRequest { apiServices.fetchPeopleId(id) }
 }
 

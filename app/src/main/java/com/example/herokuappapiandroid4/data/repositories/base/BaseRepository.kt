@@ -14,11 +14,4 @@ open class BaseRepository {
             emit(Either.Left(ioException.localizedMessage))
         }
     }
-    protected fun <T> doRequestId(request: suspend () -> T) = liveData(Dispatchers.IO){
-        try {
-            emit(Either.Right(request()))
-        } catch (ioException: IOException) {
-            emit(Either.Left(ioException.localizedMessage))
-        }
-    }
 }
